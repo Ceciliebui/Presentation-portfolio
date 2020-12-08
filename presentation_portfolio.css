@@ -1,0 +1,81 @@
+body{
+  background-color: #F5F3EE;
+}
+/*Header and nav design*/
+.header-wrapper{
+  max-width: 1024px;
+}
+.logo, .headline{
+  vertical-align: middle;
+}
+.headline{
+  display: inline-block;
+}
+.logo{
+  height: 120px;
+}
+.nav-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 375px;
+  margin-top: 0px;
+  float: right;
+}
+
+/*Nav link states*/
+li1:hover {
+    background-color: #abc4eb;
+}
+li1:active {
+  text-decoration-color: lightgrey;
+}
+li2:hover {
+    background-color: #abc4eb;
+}
+li2:active {
+  text-decoration-color: lightgrey;
+}
+li3:hover {
+    background-color: #abc4eb;
+}
+li3:active {
+  text-decoration-color: lightgrey;
+}
+li4:hover {
+    background-color: #abc4eb;
+}
+li4:active {
+  text-decoration-color: lightgrey;
+}
+
+/*Main area*/
+.main-wrapper{
+  background-color: white;
+  height: 550px;
+  width: 100%;
+  display: block;
+  margin-top: 52px;
+}
+.indexim{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Footer*/
+.footer-wrapper{
+  margin-top: 0px;
+}
+.symbols{
+    height: 120px;
+}
+.contact, .symbols{
+    vertical-align: middle;
+}
+.contact{
+  display: inline-block;
+
+}
