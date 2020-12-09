@@ -20,9 +20,8 @@ body{
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  width: 375px;
-  margin-top: 0px;
-  float: right;
+  width: 100;
+  margin-top: 20px;
 }
 
 /*Nav link states*/
@@ -52,18 +51,64 @@ li4:active {
 }
 
 /*Main area*/
-.main-wrapper{
-  background-color: white;
-  height: 550px;
+.index-wrapper{
+  height: 600px;
   width: 100%;
   display: block;
-  margin-top: 52px;
+  margin-top: 25px;
 }
 .indexim{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+/*My work main area*/
+.content-wrapper1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.content-wrapper2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.characterim{
+  height: 350px;
+  width: 350px;
+  margin-bottom: 100.5px;
+}
+.landscapeim{
+  height: 350px;
+  width: 350px;
+  margin-bottom: 100.5px;
+}
+.portraitim{
+  height: 350px;
+  width: 350px;
+  margin-bottom: 100.5px;
+
+}
+.photoim{
+  height: 350px;
+  width: 350px;
+  margin-bottom: 100.5px;
+}
+.videoim{
+  height: 350px;
+  width: 350px;
+  margin-bottom: 100.5px;
+}
+.animationim{
+  height: 350px;
+  width: 350px;
+  margin-bottom: 100.5px;
+}
+
+
 
 /*Footer*/
 .footer-wrapper{
