@@ -1,5 +1,6 @@
 body{
   margin: 0px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 /*Header and nav design*/
 header{
@@ -30,10 +31,9 @@ header{
   letter-spacing: 3px;
   font-size: 20px;
 }
-h1, h3 {
-  color: #2D2A2A;
+h1, h3{
+  font-weight: 600;
 }
-
 /*Nav link states*/
 /*Reference, how to change link color: https://stackoverflow.com/questions/10312857/blue-and-purple-default-links-how-to-remove*/
 li1:hover {
@@ -152,7 +152,6 @@ p{
   margin-left: 25px;
   margin-bottom: 10px;
 }
-
 .characterim{
   width: 500px;
   height: auto;
@@ -162,10 +161,20 @@ p{
   padding-right: 400px;
   width: 500px;
   margin-left: 35px;
-
+  margin-top: 25px;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 22px;
 }
 #ch{
   margin-top: 42px;
+  font-size: 25px;
+  font-weight: light;
 }
 #back{
   display: flex;
@@ -200,7 +209,6 @@ p{
   margin-top: 10px;
   letter-spacing: 3px;
   font-size: 20px;
-
 }
 #ab{
   margin-top: 0px;
@@ -208,6 +216,7 @@ p{
 p1{
   text-align: left;
   font-size: 20px;
+  font-weight: normal;
 }
 li5:hover{
   background-color: #abc4eb;
@@ -222,7 +231,10 @@ li7:hover{
 .footer-wrapper{
   margin-top: 20px;
   background-color: #EEE8DA;
-  margin-bottom: 0%;s
+  margin-bottom: 0%;
+}
+h4{
+  font-weight: normal;
 }
 .symbols{
     height: 120px;
