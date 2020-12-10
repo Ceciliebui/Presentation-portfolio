@@ -16,6 +16,8 @@ header{
 }
 .logo{
   height: 120px;
+  margin-left: 8px;
+  margin-top: 8px;
 }
 .nav-wrapper{
   display: flex;
@@ -26,36 +28,45 @@ header{
   width: 100;
   margin-top: 20px;
 }
+h1, h3 {
+  color: #2D2A2A;
+}
+
 
 /*Nav link states*/
+/*Reference, how to change link color: https://stackoverflow.com/questions/10312857/blue-and-purple-default-links-how-to-remove*/
 li1:hover {
     background-color: #abc4eb;
-}
-li1:active {
-  text-decoration-color: lightgrey;
 }
 li2:hover {
     background-color: #abc4eb;
 }
-li2:active {
-  text-decoration-color: lightgrey;
-}
 li3:hover {
     background-color: #abc4eb;
-}
-li3:active {
-  text-decoration-color: lightgrey;
 }
 li4:hover {
     background-color: #abc4eb;
 }
-li4:active {
-  text-decoration-color: lightgrey;
+a:link {
+  text-decoration: none;
+  color: #2D2A2A
+}
+a:before {
+  text-decoration: none;
+  color: #2D2A2A;
+}
+a:active {
+  text-decoration: none;
+  color: #2D2A2A;
+}
+a:visited {
+  text-decoration: none;
+  color: #2D2A2A;
 }
 
 /*Index main area*/
 .index-wrapper{
-  height: 600px;
+  height: 544px;
   width: 100%;
   display: block;
   margin-top: 25px;
@@ -66,23 +77,22 @@ li4:active {
   position: relative;
   width: 1500px;
   height: 536px;
-  margin-left: 9.6px; 
+  margin-left: 9.6px;
   text-align: center;
 
 }
 .text-overlay{
   font-size: 75px;
-  opacity: 40%;
   padding-top: 15%;
   width: 1500px;
   height: 536px;
+  color: black;
+
 }
-.overlay .text-overlay:hover{
+.overlay:hover{
   opacity: 35%;
   background-color: lightgrey;
-  text-opacity: 100%;
 }
-
 .indexim{
   display: block;
   margin-left: 9.6px;
@@ -94,50 +104,56 @@ li4:active {
 #i{
   text-align: center;
     letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+p{
+  text-align: center;
+  font-size: 20px;
 }
 .content-wrapper1{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 420px;
 }
 .content-wrapper2{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 420px;
+}
+.o1:hover{
+  opacity: 35%;
+  background-color: lightgrey;
+  height: 350px;
 }
 .characterim{
   height: 350px;
   width: 350px;
-  margin-bottom: 100.5px;
 }
 .landscapeim{
   height: 350px;
   width: 350px;
-  margin-bottom: 100.5px;
 }
 .portraitim{
   height: 350px;
   width: 350px;
-  margin-bottom: 100.5px;
 
 }
 .photoim{
   height: 350px;
   width: 350px;
-  margin-bottom: 100.5px;
 }
 .videoim{
   height: 350px;
   width: 350px;
-  margin-bottom: 100.5px;
 }
 .animationim{
   height: 350px;
   width: 350px;
-  margin-bottom: 100.5px;
 }
 
-/*My work character design page main area*/
+/*My work "Character design" page main area*/
 .character-wrapper{
   display: grid;
   grid-template-columns: 1fr fra
@@ -147,6 +163,9 @@ li4:active {
 .footer-wrapper{
   margin-top: 0 px;
   background-color: #EEE8DA;
+}
+h4{
+  color: #2D2A2A
 }
 #c{
   margin-left: 27px;
