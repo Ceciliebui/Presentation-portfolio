@@ -53,22 +53,47 @@ li4:active {
   text-decoration-color: lightgrey;
 }
 
-/*Main area*/
+/*Index main area*/
 .index-wrapper{
   height: 600px;
   width: 100%;
   display: block;
   margin-top: 25px;
 }
+.overlay{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 1500px;
+  height: 536px;
+  margin-left: 9.6px; 
+  text-align: center;
+
+}
+.text-overlay{
+  font-size: 75px;
+  opacity: 40%;
+  padding-top: 15%;
+  width: 1500px;
+  height: 536px;
+}
+.overlay .text-overlay:hover{
+  opacity: 35%;
+  background-color: lightgrey;
+  text-opacity: 100%;
+}
+
 .indexim{
   display: block;
-  margin-left: auto;
+  margin-left: 9.6px;
   margin-right: auto;
+  position: absolute;
 }
 
 /*My work main area*/
 #i{
   text-align: center;
+    letter-spacing: 3px;
 }
 .content-wrapper1{
   display: flex;
@@ -80,7 +105,6 @@ li4:active {
   flex-direction: row;
   justify-content: space-around;
 }
-
 .characterim{
   height: 350px;
   width: 350px;
@@ -113,11 +137,15 @@ li4:active {
   margin-bottom: 100.5px;
 }
 
-
+/*My work character design page main area*/
+.character-wrapper{
+  display: grid;
+  grid-template-columns: 1fr fra
+}
 
 /*Footer*/
 .footer-wrapper{
-  margin-top: 0px;
+  margin-top: 0 px;
   background-color: #EEE8DA;
 }
 #c{
