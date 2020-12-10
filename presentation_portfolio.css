@@ -25,28 +25,28 @@ header{
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  width: 100;
   margin-top: 20px;
-  margin-left: 1000px;
+  margin-left: 920px;
+  letter-spacing: 3px;
+  font-size: 20px;
 }
 h1, h3 {
   color: #2D2A2A;
 }
 
-
 /*Nav link states*/
 /*Reference, how to change link color: https://stackoverflow.com/questions/10312857/blue-and-purple-default-links-how-to-remove*/
 li1:hover {
-    background-color: #abc4eb;
+  background-color: #abc4eb;
 }
 li2:hover {
-    background-color: #abc4eb;
+  background-color: #abc4eb;
 }
 li3:hover {
-    background-color: #abc4eb;
+  background-color: #abc4eb;
 }
 li4:hover {
-    background-color: #abc4eb;
+  background-color: #abc4eb;
 }
 a:link {
   text-decoration: none;
@@ -104,8 +104,8 @@ a:visited {
 /*My work main area*/
 #i{
   text-align: center;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
   margin-bottom: 25px;
   margin-top: 0px;
 }
@@ -117,6 +117,8 @@ a:visited {
 p{
   text-align: center;
   font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .content-wrapper1{
   display: flex;
@@ -131,42 +133,50 @@ p{
   height: 420px;
 }
 .o1:hover{
-  opacity: 35%;
+  opacity: 60%;
   background-color: lightgrey;
   height: 350px;
 }
-.characterim{
-  height: 350px;
-  width: 350px;
-}
-.landscapeim{
-  height: 350px;
-  width: 350px;
-}
-.portraitim{
-  height: 350px;
-  width: 350px;
-
-}
-.photoim{
-  height: 350px;
-  width: 350px;
-}
-.videoim{
-  height: 350px;
-  width: 350px;
-}
-.animationim{
+.workim{
   height: 350px;
   width: 350px;
 }
 
-/*My work "Character design" page main area*/
+/*My work sub pages main area*/
 .character-wrapper{
   display: grid;
-  grid-template-columns: 1fr fra
+  grid-template-columns: 1fr;
+}
+.container1{
+  display: flex;
+  margin-left: 25px;
+  margin-bottom: 10px;
 }
 
+.characterim{
+  width: 500px;
+  height: auto;
+  margin-top: 50px;
+}
+.character-text-wrapper{
+  padding-right: 400px;
+  width: 500px;
+  margin-left: 35px;
+
+}
+#ch{
+  margin-top: 42px;
+}
+#back{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-right: 25px;
+  font-size: 22px;
+}
+#back:hover{
+  background-color: #abc4eb;
+}
 /*About page main area*/
 .about-wrapper{
   display: grid;
@@ -182,6 +192,16 @@ p{
   padding-right: 620px;
   width: 500px;
 }
+.bottom-nav-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  letter-spacing: 3px;
+  font-size: 20px;
+
+}
 #ab{
   margin-top: 0px;
 }
@@ -189,15 +209,20 @@ p1{
   text-align: left;
   font-size: 20px;
 }
-
+li5:hover{
+  background-color: #abc4eb;
+}
+li6:hover{
+  background-color: #abc4eb;
+}
+li7:hover{
+  background-color: #abc4eb;
+}
 /*Footer*/
 .footer-wrapper{
   margin-top: 20px;
   background-color: #EEE8DA;
   margin-bottom: 0%;s
-}
-h4{
-  color: #2D2A2A
 }
 .symbols{
     height: 120px;
