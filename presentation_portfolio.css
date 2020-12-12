@@ -89,9 +89,12 @@ a:visited {
   opacity: 35%;
   background-color: lightgrey;
 }
-.indexim{
+.indexim1{
   position: absolute;
   width: 1384.8px;
+}
+.indexim2, .indexim3{
+  display: none;
 }
 
 /*My work main area*/
@@ -241,7 +244,12 @@ ul{
   padding-left: 15px;
   margin-top: 8px;
 }
-
+h3{
+  margin-top: 0px;
+}
+p1{
+  margin-bottom: 50px;
+}
 /*Footer*/
 h4{
   font-weight: normal;
@@ -281,7 +289,7 @@ h4{
       display: flex;
       justify-content: space-around;
     }
-    .indexim{
+    .indexim1{
       width: 1119.4px;
     }
     .text-overlay{
@@ -336,7 +344,7 @@ h4{
     .about-text-wrapper{
       margin-left: 40px;
       width: 500px;
-      margin-left: 0px;
+
     }
   }
 
@@ -359,7 +367,7 @@ h4{
     display: flex;
     justify-content: space-around;
   }
-  .indexim{
+  .indexim1{
     width: 1000px;
     height: auto;
   }
@@ -407,27 +415,6 @@ h4{
   }
   /*My work sub pages main area*/
   .characterim{
-    width: 350px;
-  }
-  #i{
-    font-size: 28px;
-  }
-  .bottom-nav-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 10px;
-    margin-right: 25px;
-    letter-spacing: 3px;
-    font-size: 25px;
-  }
-  h2{
-    text-align: center;
-    width: auto;
-  }
-  /*My work sub pages main area*/
-  .characterim{
     width: 400px;
   }
   .character-text-wrapper{
@@ -446,24 +433,10 @@ h4{
   }
   /*About page main area*/
   .about-text-wrapper{
-    display: flex;
-    width: auto;
-    padding-right: 150px;
+    margin-left: 40px;
+    width: 500px;
+    margin-left: 0px;
   }
-  .ab {
-    font-size: 25px;
-  }
-  .about-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 25px;
-  }
-  .image-wrapper{
-    height: 550px;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 90px;
-    }
 }
 
 /*Tablet landscape view design (small tablet) and tablet portrait view design (large tablet)*/
@@ -486,7 +459,7 @@ h4{
     display: flex;
     justify-content: space-around;
   }
-  .indexim{
+  .indexim1{
     width: 750px;
     height: auto;
   }
@@ -498,6 +471,7 @@ h4{
   }
   .overlay{
     height: 269px;
+    width: 750px;
   }
   .overlay:hover{
     width: 750px;
@@ -514,8 +488,8 @@ h4{
 
   }
   .workim{
-    height: 275px;
-    width: 275px;
+    height: 250px;
+    width: 250px;
   }
   .o1:hover{
     opacity: 60%;
@@ -531,27 +505,6 @@ h4{
   }
   .il{
     font-size: 28px;
-  }
-  /*My work sub pages main area*/
-  .characterim{
-    width: 350px;
-  }
-  #i{
-    font-size: 28px;
-  }
-  .bottom-nav-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 10px;
-    margin-right: 25px;
-    letter-spacing: 3px;
-    font-size: 25px;
-  }
-  h2{
-    text-align: center;
-    width: auto;
   }
   /*My work sub pages main area*/
   .characterim{
@@ -577,112 +530,139 @@ h4{
     grid-template-columns: 1fr 1fr;
   }
   .image-wrapper{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
   }
-    .aboutim {
-      height:400px;
-      margin-left: 25px;
-    }
-    .skill-wrapper:{
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-    }
+  .about-text-wrapper{
+    padding-right: 0px;
+    width: 325px;
+  }
+  .familiar{
+    width: 150px;
+  }
+  /*Footer design*/
+  .footer-wrapper{
+    height: 200px;
+  }
+  .symbols{
+    display: block;
+    margin-left: auto;
+    margin-right: 46%;
+    margin-top: 0px;
+  }
+  .contact{
+    display: flex;
+    justify-content: space-around;
+  }
+}
 
 /*Tablet portrait design (small)*/
 @media only screen and (max-width: 768px){
   /*Header and nav design*/
+  .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  .headline{
+    font-size: 12px;
+    display: block;
+    text-align: center;
+  }
   .nav-wrapper{
-    background-color: seagreen;
+    background-color: lightgreen;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    margin-top: 20px;
+    justify-content: space-between;
+    height: 35px;
     margin-left: 0;
-    letter-spacing: 3px;
-    font-size: 22px;
+    font-size: 15px;
   }
   /*Index main area*/
   .index-wrapper{
     display: flex;
     justify-content: space-around;
   }
-  .indexim{
-    width: 1000px;
-    height: auto;
+  .indexim1{
+    display: none;
+  }
+  .indexim3{
+    display: inherit;
+    display: block;
+    position: absolute;
+    width: 435px;
   }
   .text-overlay{
-    width: 1000px;
-    height: 228px;
-    padding-top: 130px;
+    width: 435px;
+    padding-top: inherit;
+    padding: 130px;
+    font-size: 60px;
   }
   .overlay{
-    height: 358px;
+    width: 435px;
+    height: 435px;
   }
   .overlay:hover{
-    height: 358px;
-    width: auto;
+    width: 435px;
+    height: 435px;
   }
   /*My work main area*/
   .content-wrapper1{
-    height: 250px;
-    margin-bottom: 110px;
+    height: 180px;
   }
   .content-wrapper2{
-    height: 250px;
-    margin-bottom: 110px;
-
+    height: 160px;
   }
   .workim{
-    height: 275px;
-    width: 275px;
+    height: 200px;
+    width: 200px;
   }
   .o1:hover{
     opacity: 60%;
     background-color: lightgrey;
-    height: 220px;
+    height: 200px;
   }
   p{
-    font-size: 20px;
+    font-size: 18px;
   }
   #ow{
     margin-top: 60px;
     font-size: 25px;
   }
   .il{
-    font-size: 28px;
+    font-size: 25px;
+    margin-bottom: 10px;
   }
   /*My work sub pages main area*/
-  .characterim{
-    width: 350px;
-  }
   #i{
     font-size: 28px;
-  }
-  .bottom-nav-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 10px;
-    margin-right: 25px;
-    letter-spacing: 3px;
-    font-size: 25px;
   }
   h2{
     text-align: center;
     width: auto;
+    font-size: 20px;
   }
-  /*My work sub pages main area*/
   .characterim{
     width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
   }
   .character-text-wrapper{
-    width: auto;
-    margin-right: 10px;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 35
+    width: 650px;
   }
   .bottom-nav-wrapper{
     display: flex;
@@ -695,27 +675,204 @@ h4{
     font-size: 25px;
   }
   /*About page main area*/
-  .about-text-wrapper{
-    display: flex;
-    width: auto;
-    padding-right: 150px;
+  h3{
+    margin-top: 0px;
+    font-size: 20px;
   }
-  .ab {
-    font-size: 25px;
+  li, p1{
+    font-size: 18px;
   }
   .about-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 25px;
+  }
+  .aboutim{
+    width: 300px;
+    height: auto;
   }
   .image-wrapper{
-    height: 550px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+  }
+  .about-text-wrapper{
+    padding-right: 0px;
+  }
+  .familiar{
+    width: 150px;
+  }
+  .good{
+    padding-left: 5px;
+  }
+  /*Footer design*/
+  .symbols{
+    display: none;
+  }
+  .contact{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 90px;
-    }
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
 }
-/*Mobile design*/
-@media only screen and (max-width: 414px;){
 
+/*Mobile design*/
+@media only screen and (max-width: 414px){
+  /*Header and nav design*/
+  .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  .headline{
+    font-size: 12px;
+    display: block;
+    text-align: center;
+  }
+  .nav-wrapper{
+    background-color: violet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 35px;
+    margin-left: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+  h1{
+    font-size: 22px;
+  }
+  h3{
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  /*Index main area*/
+  .index-wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .indexim1{
+    display: none;
+  }
+  .indexim3{
+    display: inherit;
+    display: block;
+    position: absolute;
+    width: 360px;
+  }
+  .text-overlay{
+    width: 360px;
+    padding-top: inherit;
+    padding-top: 130px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-size: 60px;
+  }
+  .overlay{
+    width: 360px;
+    height: 360px;
+  }
+  .overlay:hover{
+    width: 360px;
+    height: 360px;
+  }
+  /*My work main area*/
+  .content-wrapper1{
+    height: 180px;
+  }
+  .content-wrapper2{
+    height: 160px;
+  }
+  .workim{
+    height: 200px;
+    width: 200px;
+  }
+  .o1:hover{
+    opacity: 60%;
+    background-color: lightgrey;
+    height: 200px;
+  }
+  p{
+    font-size: 18px;
+  }
+  #ow{
+    margin-top: 60px;
+    font-size: 25px;
+  }
+  .il{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  /*My work sub pages main area*/
+  #i{
+    font-size: 28px;
+  }
+  h2{
+    text-align: center;
+    width: auto;
+    font-size: 20px;
+  }
+  .characterim{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .character-text-wrapper{
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 35
+    width: 650px;
+  }
+  .bottom-nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 25px;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+  /*About page main area*/
+  .about-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .image-wrapper{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+  }
+  .about-text-wrapper{
+    padding-right: 0px;
+  }
+  .familiar{
+    width: 150px;
+  }
+  /*Footer design*/
+  .symbols{
+    display: none;
+  }
+  .footer-wrapper{
+    height: 270px;
+  }
+  .contact{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
 }
