@@ -5,9 +5,7 @@ body{
 /*Header and nav design*/
 header{
   background-color: #EEE8DA;
-}
-.header-wrapper{
-  max-width: 1024px;
+  width: 100%;
 }
 .logo, .headline{
   vertical-align: middle;
@@ -23,17 +21,19 @@ header{
 .nav-wrapper{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   height: 60px;
   margin-top: 20px;
-  margin-left: 920px;
+  margin-left: 800px;
   letter-spacing: 3px;
   font-size: 20px;
 }
 h1, h3{
   font-weight: 600;
+  margin-bottom: 0;
 }
+
 /*Nav link states*/
 /*Reference, how to change link color: https://stackoverflow.com/questions/10312857/blue-and-purple-default-links-how-to-remove*/
 li1:hover {
@@ -50,59 +50,52 @@ li4:hover {
 }
 a:link {
   text-decoration: none;
-  color: #2D2A2A
+  color: black;
 }
 a:before {
   text-decoration: none;
-  color: #2D2A2A;
+  color: black;
 }
 a:active {
   text-decoration: none;
-  color: #2D2A2A;
+  color: black;
 }
 a:visited {
   text-decoration: none;
-  color: #2D2A2A;
+  color: black;
 }
 
 /*Index main area*/
 .index-wrapper{
-  height: 544px;
-  width: 100%;
-  display: block;
+  display: flex;
+  justify-content: space-around;
   margin-top: 25px;
 }
 .overlay{
+  position: relative;
   display: flex;
   justify-content: space-around;
-  position: relative;
-  width: 1500px;
-  height: 536px;
-  margin-left: 9.6px;
-  text-align: center;
-
 }
 .text-overlay{
   font-size: 75px;
   padding-top: 15%;
-  width: 1500px;
-  height: 311px;
+  width: 1384.8px;
+  height: 287px;
   color: black;
-
+  text-align: center;
+  margin-bottom: 5px;
 }
 .overlay:hover{
   opacity: 35%;
   background-color: lightgrey;
 }
 .indexim{
-  display: block;
-  margin-left: 9.6px;
-  margin-right: auto;
   position: absolute;
+  width: 1384.8px;
 }
 
 /*My work main area*/
-#i{
+.il{
   text-align: center;
   letter-spacing: 3px;
   margin-bottom: 25px;
@@ -158,8 +151,7 @@ p{
   margin-top: 50px;
 }
 .character-text-wrapper{
-  padding-right: 400px;
-  width: 500px;
+  width: 700px;
   margin-left: 35px;
   margin-top: 25px;
 }
@@ -171,10 +163,14 @@ h2{
   font-style: italic;
   font-size: 22px;
 }
-#ch{
-  margin-top: 42px;
-  font-size: 25px;
-  font-weight: light;
+.bottom-nav-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  letter-spacing: 3px;
+  font-size: 20px;
 }
 #back{
   display: flex;
@@ -186,37 +182,11 @@ h2{
 #back:hover{
   background-color: #abc4eb;
 }
-/*About page main area*/
-.about-wrapper{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 25px;
-}
-.aboutim{
-  height: 500px;
-  width:auto;
-  margin-left: 15px;
-}
-.about-text-wrapper{
-  padding-right: 620px;
-  width: 500px;
-}
-.bottom-nav-wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  letter-spacing: 3px;
-  font-size: 20px;
-}
-#ab{
-  margin-top: 0px;
-}
 p1{
   text-align: left;
   font-size: 20px;
   font-weight: normal;
+  margin-bottom: 25px;
 }
 li5:hover{
   background-color: #abc4eb;
@@ -227,14 +197,59 @@ li6:hover{
 li7:hover{
   background-color: #abc4eb;
 }
+
+/*About page main area*/
+.about-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 25px;
+}
+.image-wrapper{
+  height: 550px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 25px;
+
+}
+.aboutim{
+  height: 500px;
+  width:auto;
+  margin-top: 25px;
+  margin-left: 75px;
+  margin-bottom: 25px;
+}
+.about-text-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 0px;
+}
+.ab{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.skill-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 20px;
+}
+.good{
+    padding-left: 20px;
+  }
+ul{
+  padding-left: 15px;
+  margin-top: 8px;
+}
+
 /*Footer*/
+h4{
+  font-weight: normal;
+}
 .footer-wrapper{
   margin-top: 20px;
   background-color: #EEE8DA;
   margin-bottom: 0%;
-}
-h4{
-  font-weight: normal;
 }
 .symbols{
     height: 120px;
@@ -244,4 +259,463 @@ h4{
 }
 .contact{
   display: inline-block;
+}
+
+/*Media queries*/
+/*Laptop design*/
+@media only screen and (max-width: 1400px){
+  /*Header and nav design*/
+    .nav-wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+      margin-top: 20px;
+      margin-left: 0;
+      letter-spacing: 3px;
+      font-size: 22px;
+    }
+  /*Index main area*/
+    .index-wrapper{
+      display: flex;
+      justify-content: space-around;
+    }
+    .indexim{
+      width: 1119.4px;
+    }
+    .text-overlay{
+      width: 1119.4px;
+      height: 270px;
+      padding-top: 145px;
+    }
+    .overlay:hover{
+      height: 400px;
+      width: auto;
+    }
+  /*My work main area*/
+    .content-wrapper1{
+      height: 350px;
+      margin-bottom: 50px;
+    }
+    .content-wrapper2{
+      height: 350px;
+      margin-bottom: 50px;
+    }
+    .workim{
+      height: 300px;
+      width: 300px;
+    }
+    .o1:hover{
+      opacity: 60%;
+      background-color: lightgrey;
+      height: 280px;
+    }
+    p{
+      font-size: 25px;
+    }
+    /*My work sub pages main area*/
+    .characterim{
+      width: 400px;
+    }
+    .character-text-wrapper{
+      width: auto;
+      margin-right: 10px;
+    }
+    .bottom-nav-wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 10px;
+      margin-right: 25px;
+      letter-spacing: 3px;
+      font-size: 25px;
+    }
+    /*About page main area*/
+    .about-text-wrapper{
+      margin-left: 40px;
+      width: 500px;
+      margin-left: 0px;
+    }
+  }
+
+/*Tablet landscape view design (large tablet)*/
+@media only screen and (max-width: 1280px){
+  /*Header and nav design*/
+  .nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 0;
+    letter-spacing: 3px;
+    font-size: 22px;
+  }
+  /*Index main area*/
+  .index-wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .indexim{
+    width: 1000px;
+    height: auto;
+  }
+  .text-overlay{
+    width: 1000px;
+    height: 228px;
+    padding-top: inherit;
+    padding-top: 130px;
+  }
+  .overlay{
+    height: 358px;
+  }
+  .overlay:hover{
+    height: 358px;
+    width: auto;
+  }
+  /*My work main area*/
+  .content-wrapper1{
+    height: 250px;
+    margin-bottom: 110px;
+  }
+  .content-wrapper2{
+    height: 250px;
+    margin-bottom: 110px;
+
+  }
+  .workim{
+    height: 275px;
+    width: 275px;
+  }
+  .o1:hover{
+    opacity: 60%;
+    background-color: lightgrey;
+    height: 220px;
+  }
+  p{
+    font-size: 20px;
+  }
+  #ow{
+    margin-top: 60px;
+    font-size: 25px;
+  }
+  .il{
+    font-size: 28px;
+  }
+  /*My work sub pages main area*/
+  .characterim{
+    width: 350px;
+  }
+  #i{
+    font-size: 28px;
+  }
+  .bottom-nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 25px;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+  h2{
+    text-align: center;
+    width: auto;
+  }
+  /*My work sub pages main area*/
+  .characterim{
+    width: 400px;
+  }
+  .character-text-wrapper{
+    width: auto;
+    margin-right: 10px;
+  }
+  .bottom-nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 25px;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+  /*About page main area*/
+  .about-text-wrapper{
+    display: flex;
+    width: auto;
+    padding-right: 150px;
+  }
+  .ab {
+    font-size: 25px;
+  }
+  .about-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+  }
+  .image-wrapper{
+    height: 550px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 90px;
+    }
+}
+
+/*Tablet landscape view design (small tablet) and tablet portrait view design (large tablet)*/
+@media only screen and (max-width: 1024px){
+  /*Header and nav design*/
+  .nav-wrapper{
+    background-color: darkred;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 0;
+    letter-spacing: 3px;
+    font-size: 22px;
+  }
+  /*Index main area*/
+  .index-wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .indexim{
+    width: 750px;
+    height: auto;
+  }
+  .text-overlay{
+    width: 750px;
+    height: 139px;
+    padding-top: inherit;
+    padding: 90px;
+  }
+  .overlay{
+    height: 269px;
+  }
+  .overlay:hover{
+    width: 750px;
+    height: 269px;
+  }
+  /*My work main area*/
+  .content-wrapper1{
+    height: 250px;
+    margin-bottom: 110px;
+  }
+  .content-wrapper2{
+    height: 250px;
+    margin-bottom: 110px;
+
+  }
+  .workim{
+    height: 275px;
+    width: 275px;
+  }
+  .o1:hover{
+    opacity: 60%;
+    background-color: lightgrey;
+    height: 220px;
+  }
+  p{
+    font-size: 20px;
+  }
+  #ow{
+    margin-top: 60px;
+    font-size: 25px;
+  }
+  .il{
+    font-size: 28px;
+  }
+  /*My work sub pages main area*/
+  .characterim{
+    width: 350px;
+  }
+  #i{
+    font-size: 28px;
+  }
+  .bottom-nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 25px;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+  h2{
+    text-align: center;
+    width: auto;
+  }
+  /*My work sub pages main area*/
+  .characterim{
+    width: 400px;
+  }
+  .character-text-wrapper{
+    width: auto;
+    margin-right: 10px;
+  }
+  .bottom-nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 25px;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+  /*About page main area*/
+  .about-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .image-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+    .aboutim {
+      height:400px;
+      margin-left: 25px;
+    }
+    .skill-wrapper:{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
+
+/*Tablet portrait design (small)*/
+@media only screen and (max-width: 768px){
+  /*Header and nav design*/
+  .nav-wrapper{
+    background-color: seagreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 0;
+    letter-spacing: 3px;
+    font-size: 22px;
+  }
+  /*Index main area*/
+  .index-wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .indexim{
+    width: 1000px;
+    height: auto;
+  }
+  .text-overlay{
+    width: 1000px;
+    height: 228px;
+    padding-top: 130px;
+  }
+  .overlay{
+    height: 358px;
+  }
+  .overlay:hover{
+    height: 358px;
+    width: auto;
+  }
+  /*My work main area*/
+  .content-wrapper1{
+    height: 250px;
+    margin-bottom: 110px;
+  }
+  .content-wrapper2{
+    height: 250px;
+    margin-bottom: 110px;
+
+  }
+  .workim{
+    height: 275px;
+    width: 275px;
+  }
+  .o1:hover{
+    opacity: 60%;
+    background-color: lightgrey;
+    height: 220px;
+  }
+  p{
+    font-size: 20px;
+  }
+  #ow{
+    margin-top: 60px;
+    font-size: 25px;
+  }
+  .il{
+    font-size: 28px;
+  }
+  /*My work sub pages main area*/
+  .characterim{
+    width: 350px;
+  }
+  #i{
+    font-size: 28px;
+  }
+  .bottom-nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 25px;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+  h2{
+    text-align: center;
+    width: auto;
+  }
+  /*My work sub pages main area*/
+  .characterim{
+    width: 400px;
+  }
+  .character-text-wrapper{
+    width: auto;
+    margin-right: 10px;
+  }
+  .bottom-nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 25px;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+  /*About page main area*/
+  .about-text-wrapper{
+    display: flex;
+    width: auto;
+    padding-right: 150px;
+  }
+  .ab {
+    font-size: 25px;
+  }
+  .about-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+  }
+  .image-wrapper{
+    height: 550px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 90px;
+    }
+}
+/*Mobile design*/
+@media only screen and (max-width: 414px;){
+
 }
