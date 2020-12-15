@@ -30,22 +30,22 @@ header{
   font-size: 20px;
 }
 h1, h3{
-  font-weight: 600;
-  margin-bottom: 0;
+  font-weight: lighter;
+  margin-bottom: 5px;
 }
 
 /*Nav link states*/
 /*Reference, how to change link color: https://stackoverflow.com/questions/10312857/blue-and-purple-default-links-how-to-remove*/
-li1:hover {
+.nav1:hover {
   background-color: #abc4eb;
 }
-li2:hover {
+.nav2:hover {
   background-color: #abc4eb;
 }
-li3:hover {
+.nav3:hover {
   background-color: #abc4eb;
 }
-li4:hover {
+.nav4:hover {
   background-color: #abc4eb;
 }
 a:link {
@@ -102,8 +102,7 @@ a:visited {
   text-align: center;
   letter-spacing: 3px;
   margin-bottom: 25px;
-  margin-bottom: 25px;
-  margin-top: 0px;
+  margin-top: 25px;
 }
 #ow{
   text-align: center;
@@ -140,32 +139,53 @@ p{
 
 /*My work sub pages main area*/
 .character-wrapper{
-  display: grid;
-  grid-template-columns: 1fr;
-}
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 .container1{
-  display: flex;
-  margin-left: 25px;
-  margin-bottom: 10px;
-}
+    display: flex;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    width: auto;
+  }
 .characterim{
-  width: 500px;
-  height: auto;
-  margin-top: 50px;
-}
+    width: 500px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .video-container{
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .photoim{
+    width: 400px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+.photo-container{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  width: auto;
+  }
 .character-text-wrapper{
   width: 700px;
-  margin-left: 35px;
+  margin-left: 30px;
   margin-top: 25px;
-}
+  }
 h2{
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 22px;
-}
+  }
 .bottom-nav-wrapper{
   display: flex;
   flex-direction: row;
@@ -175,48 +195,37 @@ h2{
   letter-spacing: 3px;
   font-size: 20px;
 }
-#back{
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-right: 25px;
-  font-size: 22px;
-}
-#back:hover{
-  background-color: #abc4eb;
-}
-p1{
+.contenttext{
   text-align: left;
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 25px;
+  padding-left: 2px;
 }
-li5:hover{
+.nav5:hover{
   background-color: #abc4eb;
 }
-li6:hover{
+.nav6:hover{
   background-color: #abc4eb;
 }
-li7:hover{
+.nav7:hover{
   background-color: #abc4eb;
 }
 
 /*About page main area*/
 .about-wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 25px;
 }
 .image-wrapper{
   height: 550px;
-  display: flex;
-  justify-content: space-around;
+  width: auto;
   margin-right: 25px;
-
 }
 .aboutim{
   height: 500px;
-  width:auto;
+  width: auto;
   margin-top: 25px;
   margin-left: 75px;
   margin-bottom: 25px;
@@ -224,9 +233,11 @@ li7:hover{
 .about-text-wrapper{
   display: flex;
   flex-direction: column;
+  width: 500px  ;
+  margin-right: 500px;
   margin-bottom: 25px;
   margin-top: 25px;
-  margin-left: 0px;
+  margin-left: 40px
 }
 .ab{
   margin-top: 0px;
@@ -234,7 +245,7 @@ li7:hover{
 }
 .skill-wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   font-size: 20px;
 }
 .good{
@@ -247,12 +258,16 @@ ul{
 h3{
   margin-top: 0px;
 }
-p1{
+.abouttext1{
   margin-bottom: 50px;
+  margin-top: 0px;
+  text-align: left;
+  padding: 0px;
 }
 /*Footer*/
 h4{
   font-weight: normal;
+  font-size: 18px;
 }
 .footer-wrapper{
   margin-top: 20px;
@@ -269,14 +284,14 @@ h4{
   display: inline-block;
 }
 
-/*Media queries*/
+/*Breaking points*/
 /*Laptop design*/
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1401px){
   /*Header and nav design*/
     .nav-wrapper{
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: flex-end;
       align-items: center;
       height: 60px;
       margin-top: 20px;
@@ -302,6 +317,9 @@ h4{
       width: auto;
     }
   /*My work main area*/
+  body{
+    height: auto;
+  }
     .content-wrapper1{
       height: 350px;
       margin-bottom: 50px;
@@ -344,12 +362,11 @@ h4{
     .about-text-wrapper{
       margin-left: 40px;
       width: 500px;
-
     }
   }
 
 /*Tablet landscape view design (large tablet)*/
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1281px){
   /*Header and nav design*/
   .nav-wrapper{
     display: flex;
@@ -435,15 +452,13 @@ h4{
   .about-text-wrapper{
     margin-left: 40px;
     width: 500px;
-    margin-left: 0px;
   }
 }
 
 /*Tablet landscape view design (small tablet) and tablet portrait view design (large tablet)*/
-@media only screen and (max-width: 1024px){
-  /*Header and nav design*/
+@media only screen and (max-width: 1025px){
+  /*Header and nav design*/zzz
   .nav-wrapper{
-    background-color: darkred;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -460,22 +475,23 @@ h4{
     justify-content: space-around;
   }
   .indexim1{
-    width: 750px;
+    width: 900px;
     height: auto;
   }
   .text-overlay{
-    width: 750px;
-    height: 139px;
+    width: 900px;
+    height: 200px;
     padding-top: inherit;
     padding: 90px;
+
   }
   .overlay{
-    height: 269px;
-    width: 750px;
+    height: 321.6px;
+    width: 900px;
   }
   .overlay:hover{
-    width: 750px;
-    height: 269px;
+    width: 900px;
+    height: 321.6px;
   }
   /*My work main area*/
   .content-wrapper1{
@@ -507,6 +523,9 @@ h4{
     font-size: 28px;
   }
   /*My work sub pages main area*/
+  .worktitle{
+    margin-bottom: 12px;
+  }
   .characterim{
     width: 400px;
   }
@@ -535,9 +554,18 @@ h4{
     text-align: center;
     margin-right: 25px;
   }
+  .photoim{
+    width: 350px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   .about-text-wrapper{
-    padding-right: 0px;
+    margin-left: 40px;
     width: 325px;
+    padding-right: 10px;
   }
   .familiar{
     width: 150px;
@@ -559,7 +587,7 @@ h4{
 }
 
 /*Tablet portrait design (small)*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 769px){
   /*Header and nav design*/
   .logo{
     display: block;
@@ -573,13 +601,19 @@ h4{
     text-align: center;
   }
   .nav-wrapper{
-    background-color: lightgreen;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
     height: 35px;
     margin-left: 0;
-    font-size: 15px;
+    font-size: 18px;
+  }
+  .nav1{
+    padding-left: 35px;
+  }
+  .nav4{
+    padding-right: 35px;
   }
   /*Index main area*/
   .index-wrapper{
@@ -589,25 +623,34 @@ h4{
   .indexim1{
     display: none;
   }
-  .indexim3{
+  .indexim2{
     display: inherit;
     display: block;
     position: absolute;
-    width: 435px;
+    width: 725px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .text-overlay{
-    width: 435px;
+    width: 501px;
     padding-top: inherit;
-    padding: 130px;
+    padding-top: 200px;
     font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 52px;
   }
   .overlay{
-    width: 435px;
-    height: 435px;
+    width: 725px;
+    height: 501px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .overlay:hover{
-    width: 435px;
-    height: 435px;
+    width: 725px;
+    height: 501px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   /*My work main area*/
   .content-wrapper1{
@@ -634,43 +677,67 @@ h4{
   }
   .il{
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
   }
   /*My work sub pages main area*/
-  #i{
-    font-size: 28px;
-  }
   h2{
     text-align: center;
     width: auto;
     font-size: 20px;
+    margin: 10px;
+  }
+  .contenttext{
+    text-align: center;
+    margin-top: 12px;
   }
   .characterim{
     width: 400px;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
+  }
+  .worktitle{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .video-container{
+    width: 350px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+  .photoim{
+    width: 250px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .container1{
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-left: 0px;
   }
   .character-text-wrapper{
     font-size: 12px;
     display: block;
     text-align: center;
-    margin-top: 5px;
-    margin-right: 35
-    width: 650px;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
   }
   .bottom-nav-wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
     margin-top: 10px;
-    margin-right: 25px;
+    margin-right: 0px;
     letter-spacing: 3px;
     font-size: 25px;
   }
@@ -684,11 +751,12 @@ h4{
   }
   .about-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .aboutim{
     width: 300px;
     height: auto;
+    float: right;
   }
   .image-wrapper{
     vertical-align: top;
@@ -697,13 +765,15 @@ h4{
     margin-right: 25px;
   }
   .about-text-wrapper{
-    padding-right: 0px;
+    margin-left: 10px;
+    padding-right: 5px;
+    width: auto;
   }
   .familiar{
     width: 150px;
   }
   .good{
-    padding-left: 5px;
+      padding-left: 5px;
   }
   /*Footer design*/
   .symbols{
@@ -718,8 +788,11 @@ h4{
 }
 
 /*Mobile design*/
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 415px){
   /*Header and nav design*/
+  header {
+    width: auto;
+  }
   .logo{
     display: block;
     margin-left: auto;
@@ -732,14 +805,24 @@ h4{
     text-align: center;
   }
   .nav-wrapper{
-    background-color: violet;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 35px;
     margin-left: 0;
-    font-size: 12px;
     text-align: center;
+  }
+  .nav1, .nav2, .nav3, .nav4{
+    font-size: 13px;
+  }
+  .nav1{
+    padding-left: 10px;
+  }
+  .nav4{
+    padding-right: 10px;
+  }
+  .line{
+    padding: 0px;
   }
   h1{
     font-size: 22px;
@@ -756,6 +839,9 @@ h4{
   .indexim1{
     display: none;
   }
+  .indexim2{
+    display: none;
+  }
   .indexim3{
     display: inherit;
     display: block;
@@ -765,7 +851,7 @@ h4{
   .text-overlay{
     width: 360px;
     padding-top: inherit;
-    padding-top: 130px;
+    padding-top: 45px;
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
@@ -774,75 +860,114 @@ h4{
   .overlay{
     width: 360px;
     height: 360px;
+    margin: 0px;
   }
   .overlay:hover{
     width: 360px;
     height: 360px;
+    margin: 0px;
   }
   /*My work main area*/
   .content-wrapper1{
-    height: 180px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    height: 1350px;
+    width: 350px;
   }
   .content-wrapper2{
-    height: 160px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    height: 1350px;
+    width: 350px;
   }
   .workim{
-    height: 200px;
-    width: 200px;
+    height: 350px;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .o1:hover{
     opacity: 60%;
     background-color: lightgrey;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    height: 416.4px;
+    width: 350px;
   }
   p{
-    font-size: 18px;
+    font-size: 22px;
   }
   #ow{
-    margin-top: 60px;
     font-size: 25px;
+    margin-bottom: 10px;
   }
   .il{
     font-size: 25px;
     margin-bottom: 10px;
   }
   /*My work sub pages main area*/
-  #i{
-    font-size: 28px;
-  }
   h2{
     text-align: center;
     width: auto;
-    font-size: 20px;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  .worktitle{
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   .characterim{
-    width: 400px;
-    display: block;
+    width: 350px;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
+  }
+  .contenttext{
+    margin-top: 12px;
+  }
+  .photoim{
+    width: 170px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .container1{
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-left: 0px;
   }
   .character-text-wrapper{
     font-size: 12px;
     display: block;
     text-align: center;
-    margin-top: 5px;
-    margin-right: 35
-    width: 650px;
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
   }
   .bottom-nav-wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
     margin-top: 10px;
-    margin-right: 25px;
+    margin-right: 0px;
     letter-spacing: 3px;
-    font-size: 25px;
+    font-size: 20px;
   }
   /*About page main area*/
   .about-wrapper{
@@ -850,18 +975,58 @@ h4{
     flex-direction: column;
   }
   .image-wrapper{
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    margin-right: 25px;
+    width: 250px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  .aboutim {
+    width: 250px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
   }
   .about-text-wrapper{
-    padding-right: 0px;
+    margin: 15px;
+    text-align: center;
+  }
+  p1{
+    text-align: center;
+    font-size: 16.5px;
+    margin-bottom: 20px;
+  }
+  .ab{
+    text-align: center;
+    margin: 20px;
+  }
+  .skill-wrapper{
+    margin-top: 0px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .abouttext2 {
+    font-size: inherit;
+    font-size: 20px;
+  }
+  li{
+    font-size: 16.5px;
+    text-align: left;
+    margin-left: 15px;
   }
   .familiar{
     width: 150px;
+    padding-left: 20px;
+  }
+  .good{
+    padding-right: 60px;
   }
   /*Footer design*/
+  footer{
+    width: auto;
+    margin-top: 30px;
+  }
   .symbols{
     display: none;
   }
